@@ -30,7 +30,7 @@ app.use(cors({
 }))
 
 app.get("/",(req,res)=>{
-    res.json("hello")
+    res.send("hello")
 })
 app.use("/",allRoutes);
 app.all("*",(req,res)=>{
