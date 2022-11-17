@@ -99,5 +99,5 @@ export const loginCheck = (req,res)=>{
 
 export const logoutUser = (req,res)=>{
     req.logout();
-    res.redirect(process.env.CLIENT_URL);
+    res.redirect("http://localhost:3000/");
 }

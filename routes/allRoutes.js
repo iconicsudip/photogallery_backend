@@ -15,7 +15,7 @@ router.get('/user/getimages',getImages);
 router.get("/auth/google/callback",passport.authenticate("google",{
     failureRedirect:'/auth/login/failed'
 }),(req,res)=>{
-    res.redirect(process.env.CLIENT_URL+"dashboard")
+    res.redirect("http://localhost:3000/dashboard")
 })
 
 router.get("/google",passport.authenticate("google",{ scope: ['profile','email'] }))
