@@ -24,7 +24,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors({
-    methods:"GET,POST,PUT,DELETE",
     credentials:true
 }))
 
