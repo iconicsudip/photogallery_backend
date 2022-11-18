@@ -24,7 +24,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors({
-    origin : 'https://phtogall.netlify.app',
+    origin : ['https://phtogall.netlify.app','http://localhost:3000'],
     credentials:true
 }))
 
