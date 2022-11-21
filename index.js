@@ -18,6 +18,7 @@ app.use(
     cookieSession({
         name:"session",
         keys:["cyberwolve"],
+        sameSite:'lax',
         maxAge:24*60*60*100,
     })
 )
